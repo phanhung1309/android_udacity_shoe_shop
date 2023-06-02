@@ -8,4 +8,7 @@
     <string name="password_hint">Enter your password</string>
     <string name="login_button">Login</string>
     <string name="sign_up_button">Sign up</string>
+    <string name="welcome_title">Welcome to Shoe Store Inventory App</string>
+    <string name="welcome_description">Cherish your feet!</string>
+    <string name="continue_button">Continue</string>
 </resources>
