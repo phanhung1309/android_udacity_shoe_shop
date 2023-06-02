@@ -11,4 +11,6 @@
     <string name="welcome_title">Welcome to Shoe Store Inventory App</string>
     <string name="welcome_description">Cherish your feet!</string>
     <string name="continue_button">Continue</string>
+    <string name="instruction_title">Instruction</string>
+    <string name="instruction_description">Create a list of your favorite shoes</string>
 </resources>
