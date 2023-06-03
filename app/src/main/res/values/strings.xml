@@ -13,4 +13,6 @@
     <string name="continue_button">Continue</string>
     <string name="instruction_title">Instruction</string>
     <string name="instruction_description">Create a list of your favorite shoes</string>
+    <string name="shoe_list">Shoe list</string>
+    <string name="floating_button_desc">Click to add to shoe list</string>
 </resources>
