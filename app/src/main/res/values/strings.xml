@@ -15,4 +15,5 @@
     <string name="instruction_description">Create a list of your favorite shoes</string>
     <string name="shoe_list">Shoe list</string>
     <string name="floating_button_desc">Click to add to shoe list</string>
+    <string name="logout">Log out</string>
 </resources>
