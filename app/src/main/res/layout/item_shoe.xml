@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- This layout file uses LinearLayout to create a vertically oriented UI,
+     because LinearLayout is suitable for simple linear layouts where views are stacked
+     vertically or horizontally in a linear manner. -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

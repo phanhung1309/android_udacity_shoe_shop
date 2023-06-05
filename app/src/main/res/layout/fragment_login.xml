@@ -2,6 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- This layout file uses ConstraintLayout to create a responsive and flexible UI,
+         because constraintLayout allows for creating complex layouts with flexible positioning
+         and sizing of views. -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

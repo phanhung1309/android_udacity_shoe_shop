@@ -10,6 +10,11 @@
             type="com.udacity.shoestore.screens.shoe_list.ShoeListViewModel" />
     </data>
 
+    <!-- This layout file uses ConstraintLayout to create a responsive and flexible UI,
+     and inside it is NestedScrollView with a horizontal LinearLayout to render a list shoe,
+     because ConstraintLayout allows for creating complex layouts with flexible positioning
+     and sizing of views, and LinearLayout in scroll view just render list of shoe in vertical orientation -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
