@@ -17,4 +17,15 @@
     <string name="floating_button_desc">Click to add to shoe list</string>
     <string name="logout">Log out</string>
     <string name="item_show_image_desc">Shoe image</string>
+    <string name="shoe_detail_title">Shoe details</string>
+    <string name="shoe_name_label">Shoe name</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="shoe_name_hint">Enter shoe name</string>
+    <string name="shoe_company_label">Company</string>
+    <string name="shoe_company_hint">Enter shoe company</string>
+    <string name="shoe_size_label">Size</string>
+    <string name="shoe_size_hint">Enter shoe size</string>
+    <string name="shoe_description_label">Description</string>
+    <string name="shoe_description_hint">Enter shoe description</string>
 </resources>

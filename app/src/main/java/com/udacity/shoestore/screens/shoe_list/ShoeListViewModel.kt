@@ -13,29 +13,27 @@ class ShoeListViewModel : ViewModel() {
     init {
         _shoeList.value = listOf(
             Shoe(
-                "ULTRABOOST LIGHT SHOES",
+                "Nike Air Max",
                 43.0,
-                "Adidas",
-                "Experience epic energy with the new Ultraboost Light, our lightest Ultraboost ever. The magic lies in the Light BOOST midsole, a new generation of adidas BOOST. Its unique molecule design achieves the lightest BOOST foam to date. With hundreds of BOOST capsules bursting with energy and ultimate cushioning and comfort, some feet really can have it all.",
-                listOf("https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3d0fbb4a6cb847c39783af870085d852_9366/Ultraboost_Light_Shoes_Black_GY9351.jpg")
+                "Nike",
+                "The Nike Air Max is a classic shoe that has been around for decades."
             ),
             Shoe(
-                "NMD_R1 PRIMEBLUE SHOES",
-                45.0,
+                "Adidas Superstar",
+                41.0,
                 "Adidas",
-                "Pack your bag, lace up and get going. City adventures beckon in these NMD_R1 shoes. An update to an acclaimed '80s runner from the adidas archive, these modern trainers have a soft, stretchy knit upper and energy-returning Boost cushioning for all-day comfort. Bold colour and signature midsole plugs make a statement, so wherever you're headed, you're sure to show up in style.\n" +
-                        "\n" +
-                        "This product is made with Primeblue, a high-performance recycled material made in part with Parley Ocean Plastic. 50% of the upper is textile, 75% of the textile is Primeblue yarn. No virgin polyester.",
-                listOf("https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dcada9c149294d6dac99ad0800cb5fe5_9366/NMD_R1_Primeblue_Shoes_Black_GZ9257.jpg")
+                "The Adidas Superstar is a popular shoe that has been worn by many celebrities."
             ),
             Shoe(
-                "FLUIDFLOW 3.0 SHOES",
+                "Vans Old Skool",
                 42.5,
-                "Adidas",
-                "Life doesn't stand still. Now you won't have to either with these ultra-modern adidas sneakers in your lineup. The soft knit upper is lined for comfort, and lightweight Bounce cushioning keeps you going and going. Sporty yet refined, these sneakers transcend dress codes.",
-                listOf("https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/12d46264a94c439f81f25c8af33a1201_9366/Fluidflow_3.0_Shoes_White_IG9841.jpg")
-
+                "Vans",
+                "The Vans Old Skool is a timeless shoe that is perfect for casual wear."
             )
         )
+    }
+
+    fun saveShoeDetail(shoeList: List<Shoe>) {
+        _shoeList.value = shoeList
     }
 }

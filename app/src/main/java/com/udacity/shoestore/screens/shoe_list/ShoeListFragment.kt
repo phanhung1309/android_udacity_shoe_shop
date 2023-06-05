@@ -30,6 +30,10 @@ class ShoeListFragment : Fragment() {
         binding.shoeListViewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
 
+        binding.floatingActionButton.setOnClickListener {
+            findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
+        }
+
         setHasOptionsMenu(true)
 
         return binding.root
