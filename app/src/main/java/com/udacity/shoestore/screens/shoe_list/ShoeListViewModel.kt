@@ -6,12 +6,22 @@ import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
 
 class ShoeListViewModel : ViewModel() {
+
     private val _shoeList = MutableLiveData<List<Shoe>>()
     val shoeList: LiveData<List<Shoe>>
         get() = _shoeList
 
+    var shoeName: String = ""
+    var shoeSize: String = ""
+    var shoeCompany: String = ""
+    var shoeDescription: String = ""
+
     init {
-        _shoeList.value = listOf(
+        _shoeList.value = createDefaultShoeList()
+    }
+
+    private fun createDefaultShoeList(): List<Shoe> {
+        return listOf(
             Shoe(
                 "Nike Air Max",
                 43.0,
@@ -33,7 +43,21 @@ class ShoeListViewModel : ViewModel() {
         )
     }
 
-    fun saveShoeDetail(shoeList: List<Shoe>) {
-        _shoeList.value = shoeList
+    fun validateShoeDetailInput(): Boolean {
+        return shoeName.isNotEmpty() && shoeSize.isNotEmpty() && shoeCompany.isNotEmpty() && shoeDescription.isNotEmpty()
+    }
+
+    fun saveShoeDetail() {
+        val newShoe = Shoe(shoeName, shoeSize.toDouble(), shoeCompany, shoeDescription, listOf(""))
+        val newShoeList = _shoeList.value?.toMutableList() ?: mutableListOf()
+        newShoeList.add(newShoe)
+        _shoeList.value = newShoeList
+    }
+
+    fun resetNewShoeDetails() {
+        shoeName = ""
+        shoeSize = ""
+        shoeCompany = ""
+        shoeDescription = ""
     }
 }

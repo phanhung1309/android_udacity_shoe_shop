@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="shoeListViewModel"
             type="com.udacity.shoestore.screens.shoe_list.ShoeListViewModel" />
@@ -69,6 +70,7 @@
                     android:hint="@string/shoe_name_hint"
                     android:inputType="text"
                     android:minHeight="48dp"
+                    android:text="@={shoeListViewModel.shoeName}"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toTopOf="@+id/shoe_name_label"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -94,6 +96,7 @@
                     android:hint="@string/shoe_company_hint"
                     android:inputType="text"
                     android:minHeight="48dp"
+                    android:text="@={shoeListViewModel.shoeCompany}"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toTopOf="@+id/shoe_company_label"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -119,6 +122,7 @@
                     android:hint="@string/shoe_size_hint"
                     android:inputType="numberDecimal"
                     android:minHeight="48dp"
+                    android:text="@={shoeListViewModel.shoeSize}"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toTopOf="@+id/shoe_size_label"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -144,6 +148,7 @@
                     android:hint="@string/shoe_description_hint"
                     android:inputType="textMultiLine|text"
                     android:minHeight="48dp"
+                    android:text="@={shoeListViewModel.shoeDescription}"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toTopOf="@+id/shoe_description_label"
                     app:layout_constraintEnd_toEndOf="parent"

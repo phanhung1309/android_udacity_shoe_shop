@@ -33,7 +33,7 @@
     <fragment
         android:id="@+id/shoeListFragment"
         android:name="com.udacity.shoestore.screens.shoe_list.ShoeListFragment"
-        android:label="Shoe Store Inventory App" >
+        android:label="Shoe Store Inventory App">
         <action
             android:id="@+id/action_shoeListFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -44,7 +44,7 @@
     <fragment
         android:id="@+id/shoeDetailFragment"
         android:name="com.udacity.shoestore.screens.shoe_detail.ShoeDetailFragment"
-        android:label="ShoeDetailFragment" >
+        android:label="Add new shoe details">
         <action
             android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"
             app:destination="@id/shoeListFragment" />
